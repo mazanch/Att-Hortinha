@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projeto de Vida — Horta do Terceirão</title>
+  <style>
+    :root{
+      --bg:#f7f9f7;
+      --card:#ffffff;
+      --accent:#2f8f4a;
+      --muted:#6b7280;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0b1220;line-height:1.45}
+    .container{max-width:1100px;margin:32px auto;padding:20px}
+    header{display:flex;align-items:center;gap:20px}
+    .logo{width:86px;height:86px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#5dbd7a);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:26px}
+    p.lead{color:var(--muted);margin-top:6px}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:22px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(12,20,20,0.05)}
+
+    /* Sobre o projeto */
+    .project-header{display:flex;gap:16px;align-items:flex-start}
+    .project-image{width:260px;height:160px;border-radius:8px;background:#e6efe6;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
+    .project-content h2{margin:0 0 6px 0}
+
+    /* Cards de plantas */
+    .plants{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+    @media (max-width:900px){.plants{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:520px){.plants{grid-template-columns:1fr}}
+    .plant{display:flex;gap:12px;align-items:center;padding:12px;border-radius:10px;background:#fbfffb}
+    .plant .thumb{width:84px;height:64px;border-radius:8px;background:#eef7ee;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
+    .plant h3{margin:0;font-size:16px}
+    .plant p{margin:6px 0 0 0;color:var(--muted);font-size:13px}
+
+    /* Sidebar */
+    aside .info-row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+    aside .info-row .icon{width:44px;height:44px;border-radius:8px;background:#eef7ee;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Button */
+    .btn{display:inline-block;padding:8px 12px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Terceirão</div>
+      <div>
+        <h1>Horta do Terceirão — Projeto de Vida</h1>
+        <p class="lead">Um projeto escolar que conecta práticas sustentáveis, trabalho em equipe e alimentação saudável.</p>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section>
+        <div class="card project-header">
+          <div class="project-image">Espaço para foto da horta</div>
+          <div class="project-content">
+            <h2>Sobre o projeto</h2>
+            <p>O projeto de vida do terceirão consistiu na criação, manutenção e estudo de uma plantação comunitária na escola. O objetivo foi aprender sobre cultivo, sustentabilidade e empreendedorismo social.</p>
+            <p style="margin-top:8px;color:var(--muted)">Aqui você encontra informações sobre as espécies plantadas, cuidados básicos e os resultados das colheitas.</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Plantas e hortaliças</h2>
+          <p class="lead" style="margin-top:6px">Clique em cada item para ver detalhes (substitua por links reais ou modais se desejar).</p>
+
+          <div class="plants">
+            <article class="plant">
+              <div class="thumb">Imagem</div>
+              <div>
+                <h3>Alface</h3>
+                <p>Hortaliça de ciclo curto, ideal para colheitas em poucas semanas. Rega moderada e sombra parcial.</p>
+              </div>
+            </article>
+
+            <article class="plant">
+              <div class="thumb">Imagem</div>
+              <div>
+                <h3>Tomate</h3>
+                <p>Planta frutífera que precisa de suporte (cavalete) e sol pleno. Colheita no verão.</p>
+              </div>
+            </article>
+
+            <article class="plant">
+              <div class="thumb">Imagem</div>
+              <div>
+                <h3>Cenoura</h3>
+                <p>Raiz nutritiva que prefere solo profundo e solo solto. Exige cuidados com irrigação consistente.</p>
+              </div>
+            </article>
+
+            <article class="plant">
+              <div class="thumb">Imagem</div>
+              <div>
+                <h3>Rúcula</h3>
+                <p>Folhosa de sabor picante, cresce rápido e é ótima para sistemas de plantio em canteiros e vasos.</p>
+              </div>
+            </article>
+
+            <article class="plant">
+              <div class="thumb">Imagem</div>
+              <div>
+                <h3>Ervas aromáticas</h3>
+                <p>Manjericão, salsinha e cebolinha: fáceis de cuidar e úteis para consumo diário e oficinas culinárias.</p>
+              </div>
+            </article>
+
+            <article class="plant">
+              <div class="thumb">Imagem</div>
+              <div>
+                <h3>Abóbora</h3>
+                <p>Planta de ciclo mais longo, dá frutos grandes e precisa de espaço e composto orgânico.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Atividades realizadas</h2>
+          <ul>
+            <li>Preparo do solo e composto orgânico</li>
+            <li>Semeadura e transplante de mudas</li>
+            <li>Rega, capina e controle manual de pragas</li>
+            <li>Registro dos avanços no diário de bordo</li>
+            <li>Oficinas de uso culinário e horta comunitária</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>Informações rápidas</h3>
+          <div class="info-row">
+            <div class="icon">📅</div>
+            <div>
+              <strong>Período:</strong>
+              <div style="color:var(--muted);font-size:13px">Março — Novembro (ex.: 2025)</div>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="icon">👥</div>
+            <div>
+              <strong>Equipe:</strong>
+              <div style="color:var(--muted);font-size:13px">Turma do 3º ano — Terceirão</div>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="icon">🌱</div>
+            <div>
+              <strong>Área:</strong>
+              <div style="color:var(--muted);font-size:13px">Canteiros e vasos na horta escolar</div>
+            </div>
+          </div>
+
+          <div style="margin-top:10px">
+            <a href="#" class="btn">Enviar foto da colheita</a>
+          </div>
+        </div>
+
+<div class="card" style="margin-top:16px">
+  <h2>Poste sua foto de atualização</h2>
+  <iframe src="https://docs.google.com/forms/d/e/SEU-LINK-DE-FORM/viewform?embedded=true" 
+          width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">
+    Carregando…
+  </iframe>
+</div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Adicionar imagens</h3>
+          <p style="color:var(--muted);font-size:13px">Substitua os blocos "Imagem" pelos arquivos reais. Ex.: &lt;img src="imagens/alface.jpg" alt="Alface" style="width:100%;height:100%;object-fit:cover;border-radius:8px"&gt;</p>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Contato</h3>
+          <p style="color:var(--muted);font-size:13px">Prof. (a) responsável: __________________<br>Escola: __________________<br>Email: __________________</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="card" style="display:inline-block;padding:10px 16px">
+        <strong>Horta do Terceirão</strong> — Projeto de Vida • Desenvolvido pela turma
+      </div>
+      <div style="margin-top:10px;color:var(--muted)">Dica: salve este arquivo como <em>site_plantacao_terceirao.html</em> e abra no navegador.</div>
+    </footer>
+  </div>
+</body>
+</html>
